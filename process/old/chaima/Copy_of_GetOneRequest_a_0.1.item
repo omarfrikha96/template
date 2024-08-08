@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="DEV" jobType="Standard">
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="azure_access_token" prompt="azure_access_token?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="" internalId="_NLH9gDbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_client_id" prompt="azure_client_id?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="a343af6c-ba0a-422c-8b73-e49c24baf967" internalId="_NLH9gTbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_client_secret" prompt="azure_client_secret?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="L_s8Q~lPln2IrSiaH0eTofvXifXPUBqxVUEqzdAh" internalId="_NLH9gjbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_content_type_token" prompt="azure_content_type_token?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="application/x-www-form-urlencoded" internalId="_NLH9gzbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_grant_type" prompt="azure_grant_type?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="client_credentials" internalId="_NLH9hDbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_resource" prompt="azure_resource?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="https://vault.azure.net" internalId="_NLH9hTbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_tenant_id" prompt="azure_tenant_id?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="" internalId="_NLH9hjbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_token_type" prompt="azure_token_type?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="" internalId="_NLH9hzbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_url_token" prompt="azure_url_token?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="https://login.microsoftonline.com/81107fbb-c735-43db-b9cf-ad9c775043ab/oauth2/token" internalId="_NLH9iDbnEe-z9o0bufIkgg"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="azure_access_token" prompt="azure_access_token?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="" internalId="_NLH9iTbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_client_id" prompt="azure_client_id?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="a343af6c-ba0a-422c-8b73-e49c24baf967" internalId="_NLH9ijbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_client_secret" prompt="azure_client_secret?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="L_s8Q~lPln2IrSiaH0eTofvXifXPUBqxVUEqzdAh" internalId="_NLH9izbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_content_type_token" prompt="azure_content_type_token?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="application/x-www-form-urlencoded" internalId="_NLH9jDbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_grant_type" prompt="azure_grant_type?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="client_credentials" internalId="_NLH9jTbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_resource" prompt="azure_resource?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="https://vault.azure.net" internalId="_NLH9jjbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_tenant_id" prompt="azure_tenant_id?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="81107fbb-c735-43db-b9cf-ad9c775043ab" internalId="_NLH9jzbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_token_type" prompt="azure_token_type?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="" internalId="_NLH9kDbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_url_token" prompt="azure_url_token?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="https://login.microsoftonline.com/81107fbb-c735-43db-b9cf-ad9c775043ab/oauth2/token" internalId="_NLH9kTbnEe-z9o0bufIkgg"/>
+  </context>
+  <context confirmationNeeded="false" name="STG">
+    <contextParameter comment="" name="azure_access_token" prompt="azure_access_token?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="" internalId="_NLH9kjbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_client_id" prompt="azure_client_id?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="a343af6c-ba0a-422c-8b73-e49c24baf967" internalId="_NLH9kzbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_client_secret" prompt="azure_client_secret?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="L_s8Q~lPln2IrSiaH0eTofvXifXPUBqxVUEqzdAh" internalId="_NLH9lDbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_content_type_token" prompt="azure_content_type_token?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="application/x-www-form-urlencoded" internalId="_NLH9lTbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_grant_type" prompt="azure_grant_type?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="client_credentials" internalId="_NLH9ljbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_resource" prompt="azure_resource?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="https://vault.azure.net" internalId="_NLH9lzbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_tenant_id" prompt="azure_tenant_id?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="" internalId="_NLH9mDbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_token_type" prompt="azure_token_type?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="" internalId="_NLH9mTbnEe-z9o0bufIkgg"/>
+    <contextParameter comment="" name="azure_url_token" prompt="azure_url_token?" promptNeeded="false" repositoryContextId="_j3acgBnNEe-iCa1jNMVBiA" type="id_String" value="https://login.microsoftonline.com/81107fbb-c735-43db-b9cf-ad9c775043ab/oauth2/token" internalId="_NLH9mjbnEe-z9o0bufIkgg"/>
+  </context>
+  <parameters>
+    <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:uviClbZQU91WI/LbifGFV5exLrPZeYPoT73vXXIt" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/omar-/Desktop/Talend ESB/Studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VZ6E47A2HUS4WfQu0GYkT+W0U5mh7RASkLoJkyUG" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_V5mL8EKMEe-VbNUfvRMJyA" name="DataOperation"/>
+    <routinesParameter id="_V6hZAEKMEe-VbNUfvRMJyA" name="TalendDate"/>
+    <routinesParameter id="_V6T9oEKMEe-VbNUfvRMJyA" name="Numeric"/>
+    <routinesParameter id="_V6eVsEKMEe-VbNUfvRMJyA" name="TalendDataGenerator"/>
+    <routinesParameter id="_V6bSYEKMEe-VbNUfvRMJyA" name="StringHandling"/>
+    <routinesParameter id="_V6lDYEKMEe-VbNUfvRMJyA" name="TalendString"/>
+    <routinesParameter id="_V6XA8EKMEe-VbNUfvRMJyA" name="Relational"/>
+    <routinesParameter id="_V6pU0EKMEe-VbNUfvRMJyA" name="TalendStringUtil"/>
+    <routinesParameter id="_V6Mo4EKMEe-VbNUfvRMJyA" name="Mathematical"/>
+    <routinesParameter id="_VU_6QDDqEe-sEOffpoNCvw" name="TokenValidatorService"/>
+  </parameters>
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="288" sizeX="41" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/api/v1&quot;"/>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="header"/>
+      <elementValue elementRef="HTTP_VERB" value="GET"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/product/{code}&quot;"/>
+      <elementValue elementRef="CONSUMES" value="NONE"/>
+      <elementValue elementRef="PRODUCES" value="XML-JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;ws_TEST_OAUTH2&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_REQUEST" value="false"/>
+    <elementParameter field="CHECK" name="ATTRIBUTES_TO_ELEMENTS" value="true"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>/product/{CD_PRODUIT}"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="WRONG_CALLS" name="WRONG_CALLS">
+      <column defaultValue="" key="false" length="255" name="uri" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="method" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="error" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="header" name="header">
+      <column comment="header" key="false" length="-1" name="Authorization" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;is_valid_token&quot;"/>
+      <elementValue elementRef="VALUE" value="((TokenValidatorService2)globalMap.get(&quot;tokenValidatorService2&quot;)).validateToken(header.Authorization)"/>
+      <elementValue elementRef="KEY" value="&quot;i_stepSequence&quot;"/>
+      <elementValue elementRef="VALUE" value="0"/>
+      <elementValue elementRef="KEY" value="&quot;code&quot;"/>
+      <elementValue elementRef="VALUE" value="header.code"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>is_valid_token"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="header" name="tSetGlobalVar_1">
+      <column comment="header" key="false" length="-1" name="Authorization" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="VALUE" value="&quot;Unauthorized User&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>The Token is not valide"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_2">
+      <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_2" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="CUSTOM"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="401"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;correlationId&quot;"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;s_correlationId&quot;)"/>
+      <elementValue elementRef="NAME" value="&quot;Content-Type&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>401 - unauthorized"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_2">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;tokenValidatorService&quot;"/>
+      <elementValue elementRef="VALUE" value="new TokenValidatorService2(context.azure_tenant_id, context.azure_client_id)"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Init TokenValidatorService"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_2"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_3" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="VALUE" value="&quot;Internal server error&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Internal server error"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_3">
+      <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_3" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="500"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="401" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>500 - Internal server error"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_3">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_GG_iwEnHEe-N7bzp-p4KhQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5433&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;restapi&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;API_TALEND&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Nag0pZb7GeJFBQjWsjU21PMwh9W1qCg6P1qVGExZsqtOBQ=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>DB_API Connection&lt;/b>"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_GG_iwEnHEe-N7bzp-p4KhQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;restapi&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;API_TALEND&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mcK9x2TtWjGLyQ75rH10RlDdjp7Qlx9atGMV4y+Jggw27Q==" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_GG_iwEnHEe-N7bzp-p4KhQ - Produit" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Produit&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;API_TALEND\&quot;.\&quot;Produit\&quot;.\&quot;CD_PRODUIT\&quot;, &#xA;  \&quot;API_TALEND\&quot;.\&quot;Produit\&quot;.\&quot;NOM_PRODUIT\&quot;, &#xA;  \&quot;API_TALEND\&quot;.\&quot;Produit\&quot;.\&quot;PRIX_ACHAT_PRODUIT\&quot;, &#xA;  \&quot;API_TALEND\&quot;.\&quot;Produit\&quot;.\&quot;PRIX_VENTE_PRODUIT\&quot;&#xA;FROM \&quot;API_TALEND\&quot;.\&quot;Produit\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CD_PRODUIT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_PRODUIT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRIX_ACHAT_PRODUIT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRIX_VENTE_PRODUIT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value=" &lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Produit DB"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Produit" name="tDBInput_1">
+      <column comment="" key="true" length="50" name="CD_PRODUIT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="NOM_PRODUIT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="PRIX_ACHAT_PRODUIT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="PRIX_VENTE_PRODUIT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="CD_PRODUIT"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="((String)globalMap.get(&quot;code&quot;))"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Filter by CD_PRODUIT"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Produit" name="tFilterRow_1">
+      <column comment="" key="true" length="50" name="CD_PRODUIT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="NOM_PRODUIT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="PRIX_ACHAT_PRODUIT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="PRIX_VENTE_PRODUIT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="FILTER" label="Produit" name="FILTER">
+      <column comment="" key="true" length="50" name="CD_PRODUIT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="NOM_PRODUIT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="PRIX_ACHAT_PRODUIT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="PRIX_VENTE_PRODUIT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="Produit" name="REJECT">
+      <column comment="" key="true" length="50" name="CD_PRODUIT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="NOM_PRODUIT" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="PRIX_ACHAT_PRODUIT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="131089" name="PRIX_VENTE_PRODUIT" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="128" sizeX="64" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="oneProduct" name="oneProduct">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row4" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="CD_PRODUIT" type="id_String" outgoingConnections="//@node.11/@nodeData/@connections.0" xpath="row4/CD_PRODUIT" nullable="false"/>
+        <nodes name="NOM_PRODUIT" type="id_String" outgoingConnections="//@node.11/@nodeData/@connections.1" xpath="row4/NOM_PRODUIT" nullable="false"/>
+        <nodes name="PRIX_ACHAT_PRODUIT" type="id_BigDecimal" outgoingConnections="//@node.11/@nodeData/@connections.2" xpath="row4/PRIX_ACHAT_PRODUIT" nullable="false"/>
+        <nodes name="PRIX_VENTE_PRODUIT" type="id_BigDecimal" outgoingConnections="//@node.11/@nodeData/@connections.3" xpath="row4/PRIX_VENTE_PRODUIT" nullable="false"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="oneProduct" allInOne="true">
+        <nodes name="body" expression="" type="id_Document" xpath="oneProduct/body">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="products" expression="" type="id_String" xpath="oneProduct.body:/products" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="product" expression="" type="id_String" xpath="oneProduct.body:/products/product" loop="true" main="true">
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="CD_PRODUIT" expression=" row4.CD_PRODUIT" type="id_String" incomingConnections="//@node.11/@nodeData/@connections.0" xpath="oneProduct.body:/products/product/CD_PRODUIT"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="NOM_PRODUIT" expression=" row4.NOM_PRODUIT" type="id_String" incomingConnections="//@node.11/@nodeData/@connections.1" xpath="oneProduct.body:/products/product/NOM_PRODUIT"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="PRIX_ACHAT_PRODUIT" expression=" row4.PRIX_ACHAT_PRODUIT" type="id_BigDecimal" incomingConnections="//@node.11/@nodeData/@connections.2" xpath="oneProduct.body:/products/product/PRIX_ACHAT_PRODUIT"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="PRIX_VENTE_PRODUIT" expression=" row4.PRIX_VENTE_PRODUIT" type="id_BigDecimal" incomingConnections="//@node.11/@nodeData/@connections.3" xpath="oneProduct.body:/products/product/PRIX_VENTE_PRODUIT"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.11/@nodeData/@inputTrees.0/@nodes.0" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.11/@nodeData/@inputTrees.0/@nodes.1" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.11/@nodeData/@inputTrees.0/@nodes.2" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.11/@nodeData/@inputTrees.0/@nodes.3" target="//@node.11/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;correlationId&quot;"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;s_correlationId&quot;)"/>
+      <elementValue elementRef="NAME" value="&quot;Content-Type&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>200 - OK"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="VALUE" value="&quot;Product not found&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>Product not found"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_4" show="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="404"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="401" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS">
+      <elementValue elementRef="NAME" value="&quot;correlationId&quot;"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;s_correlationId&quot;)"/>
+      <elementValue elementRef="NAME" value="&quot;Content-Type&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>404 - Not Found"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_4">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="header" lineStyle="0" metaname="header" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tSetGlobalVar_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="code"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="header" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSetGlobalVar_1" target="tDBInput_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="(Boolean)globalMap.get(&quot;is_valid_token&quot;)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tSetGlobalVar_1" target="tFixedFlowInput_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!(Boolean)globalMap.get(&quot;is_valid_token&quot;)"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tFixedFlowInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tRESTResponse_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFixedFlowInput_3" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_3" target="tRESTResponse_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tSetGlobalVar_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tFilterRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row4" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFilterRow_1" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_1" target="tFixedFlowInput_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFilterRow_1_NB_LINE_OK&quot;)) == 0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="oneProduct" lineStyle="0" metaname="oneProduct" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tRESTResponse_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="oneProduct" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tRESTResponse_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Check Authentication (Get One Product by CD_PRODUIT )"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;255"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;128;255"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="401 - Unauthorized User"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;0;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_3" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="500 - Internal server error"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="200 - Authorized User"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;255;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;0"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="404 - Check if the product is found"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;0;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;128"/>
+  </subjob>
+</talendfile:ProcessType>
