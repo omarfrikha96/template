@@ -24,6 +24,7 @@ import routines.TalendString;
 import routines.StringHandling;
 import routines.TalendDate;
 import routines.Relational;
+import routines.JacquemusUtils;
 import routines.Mathematical;
 import routines.TokenValidatorService;
 import routines.system.*;
@@ -814,7 +815,7 @@ public class GetAllRequest implements TalendJob {
 		@javax.ws.rs.GET()
 
 		@javax.ws.rs.Path("/products")
-		@javax.ws.rs.Produces({ "application/xml", "text/xml", "application/json" })
+		@javax.ws.rs.Produces({ "application/json" })
 		public javax.ws.rs.core.Response header(
 
 				@javax.ws.rs.HeaderParam("Authorization") String Authorization
@@ -1376,7 +1377,7 @@ public class GetAllRequest implements TalendJob {
 							log4jParamters_tDBConnection_1.append("USER" + " = " + "\"postgres\"");
 							log4jParamters_tDBConnection_1.append(" | ");
 							log4jParamters_tDBConnection_1.append("PASS" + " = " + String.valueOf(
-									"enc:routine.encryption.key.v1:nVPbWN/YhFvfEroo754uqN4hKR6S0kq0lr3gZzdVPY4=")
+									"enc:routine.encryption.key.v1:GqL3OO+jPDG1m8Nzqkke2bHxBzTYZke4XdBgdRxoqBs=")
 									.substring(0, 4) + "...");
 							log4jParamters_tDBConnection_1.append(" | ");
 							log4jParamters_tDBConnection_1.append("USE_SHARED_CONNECTION" + " = " + "false");
@@ -1406,7 +1407,7 @@ public class GetAllRequest implements TalendJob {
 				String dbUser_tDBConnection_1 = "postgres";
 
 				final String decryptedPassword_tDBConnection_1 = routines.system.PasswordEncryptUtil
-						.decryptPassword("enc:routine.encryption.key.v1:rb2HH2hqNbHQyu9k1kD0i2YEycX8xWTCuNfqOmQNdW0=");
+						.decryptPassword("enc:routine.encryption.key.v1:VkYxyXRd47n1ycjPHUqM3sjOgqbe1CFfMuDHZFYWbKw=");
 				String dbPwd_tDBConnection_1 = decryptedPassword_tDBConnection_1;
 
 				java.sql.Connection conn_tDBConnection_1 = null;
@@ -3292,7 +3293,7 @@ public class GetAllRequest implements TalendJob {
 
 				for (int i_tFixedFlowInput_1 = 0; i_tFixedFlowInput_1 < 1; i_tFixedFlowInput_1++) {
 
-					row4.body = "Products not found";
+					row4.body = "{\"databaseIsEmpty\": true}";
 
 					/**
 					 * [tFixedFlowInput_1 begin ] stop
@@ -3857,7 +3858,7 @@ public class GetAllRequest implements TalendJob {
 
 				for (int i_tFixedFlowInput_2 = 0; i_tFixedFlowInput_2 < 1; i_tFixedFlowInput_2++) {
 
-					row2.body = "Unauthorized User";
+					row2.body = "{\"authorized\": false}";
 
 					/**
 					 * [tFixedFlowInput_2 begin ] stop
@@ -4422,7 +4423,7 @@ public class GetAllRequest implements TalendJob {
 
 				for (int i_tFixedFlowInput_3 = 0; i_tFixedFlowInput_3 < 1; i_tFixedFlowInput_3++) {
 
-					row3.body = "Internal server error";
+					row3.body = "{\"Internal_server_error\": true}";
 
 					/**
 					 * [tFixedFlowInput_3 begin ] stop
@@ -4737,6 +4738,12 @@ public class GetAllRequest implements TalendJob {
 			return this.Authorization;
 		}
 
+		public String correlationId;
+
+		public String getCorrelationId() {
+			return this.correlationId;
+		}
+
 		private String readString(ObjectInputStream dis) throws IOException {
 			String strReturn = null;
 			int length = 0;
@@ -4807,6 +4814,8 @@ public class GetAllRequest implements TalendJob {
 
 					this.Authorization = readString(dis);
 
+					this.correlationId = readString(dis);
+
 				} catch (IOException e) {
 					throw new RuntimeException(e);
 
@@ -4826,6 +4835,8 @@ public class GetAllRequest implements TalendJob {
 
 					this.Authorization = readString(dis);
 
+					this.correlationId = readString(dis);
+
 				} catch (IOException e) {
 					throw new RuntimeException(e);
 
@@ -4842,6 +4853,10 @@ public class GetAllRequest implements TalendJob {
 
 				writeString(this.Authorization, dos);
 
+				// String
+
+				writeString(this.correlationId, dos);
+
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
@@ -4855,6 +4870,10 @@ public class GetAllRequest implements TalendJob {
 
 				writeString(this.Authorization, dos);
 
+				// String
+
+				writeString(this.correlationId, dos);
+
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
@@ -4867,6 +4886,7 @@ public class GetAllRequest implements TalendJob {
 			sb.append(super.toString());
 			sb.append("[");
 			sb.append("Authorization=" + Authorization);
+			sb.append(",correlationId=" + correlationId);
 			sb.append("]");
 
 			return sb.toString();
@@ -4879,6 +4899,14 @@ public class GetAllRequest implements TalendJob {
 				sb.append("<null>");
 			} else {
 				sb.append(Authorization);
+			}
+
+			sb.append("|");
+
+			if (correlationId == null) {
+				sb.append("<null>");
+			} else {
+				sb.append(correlationId);
 			}
 
 			sb.append("|");
@@ -5076,7 +5104,9 @@ public class GetAllRequest implements TalendJob {
 								log4jParamters_tSetGlobalVar_1.append("VARIABLES" + " = " + "[{VALUE="
 										+ ("((TokenValidatorService)globalMap.get(\"tokenValidatorService\")).validateToken(header.Authorization)")
 										+ ", KEY=" + ("\"is_valid_token\"") + "}, {VALUE=" + ("0") + ", KEY="
-										+ ("\"i_stepSequence\"") + "}]");
+										+ ("\"i_stepSequence\"") + "}, {VALUE="
+										+ ("JacquemusUtils.isBlank(header.correlationId) ? StringHandling.SUBSTR((java.util.UUID.randomUUID()).toString(), 10, 14) : header.correlationId")
+										+ ", KEY=" + ("\"s_correlationId\"") + "}]");
 								log4jParamters_tSetGlobalVar_1.append(" | ");
 								if (log.isDebugEnabled())
 									log.debug("tSetGlobalVar_1 - " + (log4jParamters_tSetGlobalVar_1));
@@ -5131,6 +5161,12 @@ public class GetAllRequest implements TalendJob {
 
 								header.Authorization = (String) params_tRESTRequest_1
 										.get("HEADER:Authorization:id_String");
+
+							}
+							if (params_tRESTRequest_1.containsKey("PATH:correlationId:id_String")) {
+
+								header.correlationId = (String) params_tRESTRequest_1
+										.get("PATH:correlationId:id_String");
 
 							}
 						} else { // non matched flow
@@ -5198,6 +5234,10 @@ public class GetAllRequest implements TalendJob {
 						globalMap.put("is_valid_token", ((TokenValidatorService) globalMap.get("tokenValidatorService"))
 								.validateToken(header.Authorization));
 						globalMap.put("i_stepSequence", 0);
+						globalMap.put("s_correlationId",
+								JacquemusUtils.isBlank(header.correlationId)
+										? StringHandling.SUBSTR((java.util.UUID.randomUUID()).toString(), 10, 14)
+										: header.correlationId);
 
 						tos_count_tSetGlobalVar_1++;
 
@@ -5933,6 +5973,6 @@ public class GetAllRequest implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 191198 characters generated by Talend Open Studio for ESB on the 7 août 2024
- * à 2:08:30 PM CET
+ * 192459 characters generated by Talend Open Studio for ESB on the 11 août 2024
+ * à 12:53:27 PM CET
  ************************************************************************************************/

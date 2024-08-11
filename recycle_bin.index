@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
-  <deletedFolders>process/TECHNICAL</deletedFolders>
   <deletedFolders>process/tests</deletedFolders>
   <deletedItems id="_stMpEENcEe-t9LnawCIItQ" path="" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_OIvY0FCwEe-JqftXUxoHug" path="" type="PROCESS"/>
+  <deletedItems id="_YeRaUFVzEe-Iw5anIrfBCQ" path="" type="PROCESS"/>
   <deletedItems id="_6es5gEmQEe-RMbTnfoy45w" path="ESB" type="PROCESS"/>
   <deletedItems id="_07RBkFCgEe-zKLI0c4JnqQ" path="TECHNICAL" type="PROCESS"/>
   <deletedItems id="_LjVAIFL9Ee-g55gYa4GMlA" path="final_json" type="PROCESS"/>
-  <deletedItems id="_udwqADQBEe-1Q_YwwT9bJg" path="" type="ROUTINES"/>
+  <deletedItems id="_Yqb8YFTWEe-hwuuy_3bkpg" path="final_xml" type="PROCESS"/>
+  <deletedItems id="_rf5b8FTVEe-hwuuy_3bkpg" path="final_xml" type="PROCESS"/>
 </recyclebin:RecycleBin>

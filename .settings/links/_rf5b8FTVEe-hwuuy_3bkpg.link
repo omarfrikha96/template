@@ -1,0 +1,419 @@
+{
+  "itemId" : "_rf5b8FTVEe-hwuuy_3bkpg",
+  "contextList" : [ {
+    "contextName" : "PRD",
+    "repoId" : "_QH1sQDSPEemA4to60-AqJA",
+    "parameterList" : [ {
+      "id" : "_QIqLrTSPEemA4to60-AqJA",
+      "name" : "GLOBAL_Environnement"
+    }, {
+      "id" : "_QIqLrjSPEemA4to60-AqJA",
+      "name" : "GLOBAL_Parameters_File"
+    }, {
+      "id" : "_bV9dFHYjEem09_sFFxi1iA",
+      "name" : "GLOBAL_Path_Temp"
+    }, {
+      "id" : "_bMGf0X1dEemYB6WD5PpOPQ",
+      "name" : "GLOBAL_Dry_Run"
+    }, {
+      "id" : "_cEdKhH1lEemYB6WD5PpOPQ",
+      "name" : "GLOBAL_Path_DFS"
+    }, {
+      "id" : "_WtLDlMsTEemD74A0lLH2tg",
+      "name" : "GLOBAL_Path_Exchange_Y2"
+    }, {
+      "id" : "_W88bqPPpEemH4eb9DevLKg",
+      "name" : "GLOBAL_Datadog_Uri"
+    }, {
+      "id" : "_W88bqfPpEemH4eb9DevLKg",
+      "name" : "GLOBAL_Datadog_Interval"
+    }, {
+      "id" : "_9WGP8EDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Temp"
+    }, {
+      "id" : "_9WGP8UDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_In"
+    }, {
+      "id" : "_9WGP8kDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Out"
+    }, {
+      "id" : "_9WGP80DtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Archive"
+    }, {
+      "id" : "_9CC-xFSyEequ-oXxcSAHTw",
+      "name" : "GLOBAL_Job_Master_Name"
+    }, {
+      "id" : "_tlHouJ-bEeq-gdtovrfDEQ",
+      "name" : "GLOBAL_File_In"
+    }, {
+      "id" : "_tlHouZ-bEeq-gdtovrfDEQ",
+      "name" : "GLOBAL_File_Out"
+    }, {
+      "id" : "_7II541QmEeuf3YuVL9PDow",
+      "name" : "GLOBAL_Path_Resources"
+    }, {
+      "id" : "_m1RRBCenEe6AJqsqjiQfNQ",
+      "name" : "GLOBAL_Correlation_Id"
+    }, {
+      "id" : "_Wkr_yG0GEe6dP5gGiwXAFg",
+      "name" : "GLOBAL_File_In_CN"
+    }, {
+      "id" : "_Wkr_yW0GEe6dP5gGiwXAFg",
+      "name" : "GLOBAL_Folder_Out_CN"
+    }, {
+      "id" : "_cSPfMnSrEe6hraz4AdMJBQ",
+      "name" : "GLOBAL_Folder_In_CN"
+    }, {
+      "id" : "_YM2HlHThEe6hraz4AdMJBQ",
+      "name" : "GLOBAL_Folder_In_Y2"
+    }, {
+      "id" : "_SvwasM9gEe6epanjV3g-hA",
+      "name" : "GLOBAL_Path_DFS_New"
+    } ]
+  }, {
+    "contextName" : "PRD",
+    "repoId" : "_ohlg0DqOEemJt4N6WX17Xg",
+    "parameterList" : [ {
+      "id" : "_keIBrCGwEeqrKImev-d6_g",
+      "name" : "FILE_Error_Response"
+    }, {
+      "id" : "_SxruKHJqEe6HMojcbffHbQ",
+      "name" : "WS_Execution_informations_file"
+    }, {
+      "id" : "_SxruKXJqEe6HMojcbffHbQ",
+      "name" : "WS_Error_informations_file"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_QH1sQDSPEemA4to60-AqJA",
+    "parameterList" : [ {
+      "id" : "_QIqLpDSPEemA4to60-AqJA",
+      "name" : "GLOBAL_Environnement"
+    }, {
+      "id" : "_QIqLpTSPEemA4to60-AqJA",
+      "name" : "GLOBAL_Parameters_File"
+    }, {
+      "id" : "_bV9dEXYjEem09_sFFxi1iA",
+      "name" : "GLOBAL_Path_Temp"
+    }, {
+      "id" : "_bMF4wX1dEemYB6WD5PpOPQ",
+      "name" : "GLOBAL_Dry_Run"
+    }, {
+      "id" : "_cEdKgX1lEemYB6WD5PpOPQ",
+      "name" : "GLOBAL_Path_DFS"
+    }, {
+      "id" : "_WtLDkcsTEemD74A0lLH2tg",
+      "name" : "GLOBAL_Path_Exchange_Y2"
+    }, {
+      "id" : "_W88bovPpEemH4eb9DevLKg",
+      "name" : "GLOBAL_Datadog_Uri"
+    }, {
+      "id" : "_W88bo_PpEemH4eb9DevLKg",
+      "name" : "GLOBAL_Datadog_Interval"
+    }, {
+      "id" : "_9WGP5EDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Temp"
+    }, {
+      "id" : "_9WGP5UDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_In"
+    }, {
+      "id" : "_9WGP5kDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Out"
+    }, {
+      "id" : "_9WGP50DtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Archive"
+    }, {
+      "id" : "_9CC-wVSyEequ-oXxcSAHTw",
+      "name" : "GLOBAL_Job_Master_Name"
+    }, {
+      "id" : "_tlHosp-bEeq-gdtovrfDEQ",
+      "name" : "GLOBAL_File_In"
+    }, {
+      "id" : "_tlHos5-bEeq-gdtovrfDEQ",
+      "name" : "GLOBAL_File_Out"
+    }, {
+      "id" : "_7II54FQmEeuf3YuVL9PDow",
+      "name" : "GLOBAL_Path_Resources"
+    }, {
+      "id" : "_m1RRASenEe6AJqsqjiQfNQ",
+      "name" : "GLOBAL_Correlation_Id"
+    }, {
+      "id" : "_Wkr_wm0GEe6dP5gGiwXAFg",
+      "name" : "GLOBAL_File_In_CN"
+    }, {
+      "id" : "_Wkr_w20GEe6dP5gGiwXAFg",
+      "name" : "GLOBAL_Folder_Out_CN"
+    }, {
+      "id" : "_cSO4IXSrEe6hraz4AdMJBQ",
+      "name" : "GLOBAL_Folder_In_CN"
+    }, {
+      "id" : "_YM2HkXThEe6hraz4AdMJBQ",
+      "name" : "GLOBAL_Folder_In_Y2"
+    }, {
+      "id" : "_Svvzoc9gEe6epanjV3g-hA",
+      "name" : "GLOBAL_Path_DFS_New"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_ohlg0DqOEemJt4N6WX17Xg",
+    "parameterList" : [ {
+      "id" : "_keIBkSGwEeqrKImev-d6_g",
+      "name" : "FILE_Error_Response"
+    }, {
+      "id" : "_SxruInJqEe6HMojcbffHbQ",
+      "name" : "WS_Execution_informations_file"
+    }, {
+      "id" : "_SxruI3JqEe6HMojcbffHbQ",
+      "name" : "WS_Error_informations_file"
+    } ]
+  }, {
+    "contextName" : "PPD",
+    "repoId" : "_QH1sQDSPEemA4to60-AqJA",
+    "parameterList" : [ {
+      "id" : "_QIqLqjSPEemA4to60-AqJA",
+      "name" : "GLOBAL_Environnement"
+    }, {
+      "id" : "_QIqLqzSPEemA4to60-AqJA",
+      "name" : "GLOBAL_Parameters_File"
+    }, {
+      "id" : "_bV9dE3YjEem09_sFFxi1iA",
+      "name" : "GLOBAL_Path_Temp"
+    }, {
+      "id" : "_bMGf0H1dEemYB6WD5PpOPQ",
+      "name" : "GLOBAL_Dry_Run"
+    }, {
+      "id" : "_cEdKg31lEemYB6WD5PpOPQ",
+      "name" : "GLOBAL_Path_DFS"
+    }, {
+      "id" : "_WtLDk8sTEemD74A0lLH2tg",
+      "name" : "GLOBAL_Path_Exchange_Y2"
+    }, {
+      "id" : "_W88bpvPpEemH4eb9DevLKg",
+      "name" : "GLOBAL_Datadog_Uri"
+    }, {
+      "id" : "_W88bp_PpEemH4eb9DevLKg",
+      "name" : "GLOBAL_Datadog_Interval"
+    }, {
+      "id" : "_9WGP7EDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Temp"
+    }, {
+      "id" : "_9WGP7UDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_In"
+    }, {
+      "id" : "_9WGP7kDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Out"
+    }, {
+      "id" : "_9WGP70DtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Archive"
+    }, {
+      "id" : "_9CC-w1SyEequ-oXxcSAHTw",
+      "name" : "GLOBAL_Job_Master_Name"
+    }, {
+      "id" : "_tlHotp-bEeq-gdtovrfDEQ",
+      "name" : "GLOBAL_File_In"
+    }, {
+      "id" : "_tlHot5-bEeq-gdtovrfDEQ",
+      "name" : "GLOBAL_File_Out"
+    }, {
+      "id" : "_7II54lQmEeuf3YuVL9PDow",
+      "name" : "GLOBAL_Path_Resources"
+    }, {
+      "id" : "_m1RRAyenEe6AJqsqjiQfNQ",
+      "name" : "GLOBAL_Correlation_Id"
+    }, {
+      "id" : "_Wkr_xm0GEe6dP5gGiwXAFg",
+      "name" : "GLOBAL_File_In_CN"
+    }, {
+      "id" : "_Wkr_x20GEe6dP5gGiwXAFg",
+      "name" : "GLOBAL_Folder_Out_CN"
+    }, {
+      "id" : "_cSPfMXSrEe6hraz4AdMJBQ",
+      "name" : "GLOBAL_Folder_In_CN"
+    }, {
+      "id" : "_YM2Hk3ThEe6hraz4AdMJBQ",
+      "name" : "GLOBAL_Folder_In_Y2"
+    }, {
+      "id" : "_Svvzo89gEe6epanjV3g-hA",
+      "name" : "GLOBAL_Path_DFS_New"
+    } ]
+  }, {
+    "contextName" : "PPD",
+    "repoId" : "_ohlg0DqOEemJt4N6WX17Xg",
+    "parameterList" : [ {
+      "id" : "_keIBoyGwEeqrKImev-d6_g",
+      "name" : "FILE_Error_Response"
+    }, {
+      "id" : "_SxruJnJqEe6HMojcbffHbQ",
+      "name" : "WS_Execution_informations_file"
+    }, {
+      "id" : "_SxruJ3JqEe6HMojcbffHbQ",
+      "name" : "WS_Error_informations_file"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_QH1sQDSPEemA4to60-AqJA",
+    "parameterList" : [ {
+      "id" : "_QIqLpzSPEemA4to60-AqJA",
+      "name" : "GLOBAL_Environnement"
+    }, {
+      "id" : "_QIqLqDSPEemA4to60-AqJA",
+      "name" : "GLOBAL_Parameters_File"
+    }, {
+      "id" : "_bV9dEnYjEem09_sFFxi1iA",
+      "name" : "GLOBAL_Path_Temp"
+    }, {
+      "id" : "_bMF4wn1dEemYB6WD5PpOPQ",
+      "name" : "GLOBAL_Dry_Run"
+    }, {
+      "id" : "_cEdKgn1lEemYB6WD5PpOPQ",
+      "name" : "GLOBAL_Path_DFS"
+    }, {
+      "id" : "_WtLDkssTEemD74A0lLH2tg",
+      "name" : "GLOBAL_Path_Exchange_Y2"
+    }, {
+      "id" : "_W88bpPPpEemH4eb9DevLKg",
+      "name" : "GLOBAL_Datadog_Uri"
+    }, {
+      "id" : "_W88bpfPpEemH4eb9DevLKg",
+      "name" : "GLOBAL_Datadog_Interval"
+    }, {
+      "id" : "_9WGP6EDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Temp"
+    }, {
+      "id" : "_9WGP6UDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_In"
+    }, {
+      "id" : "_9WGP6kDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Out"
+    }, {
+      "id" : "_9WGP60DtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Archive"
+    }, {
+      "id" : "_9CC-wlSyEequ-oXxcSAHTw",
+      "name" : "GLOBAL_Job_Master_Name"
+    }, {
+      "id" : "_tlHotJ-bEeq-gdtovrfDEQ",
+      "name" : "GLOBAL_File_In"
+    }, {
+      "id" : "_tlHotZ-bEeq-gdtovrfDEQ",
+      "name" : "GLOBAL_File_Out"
+    }, {
+      "id" : "_7II54VQmEeuf3YuVL9PDow",
+      "name" : "GLOBAL_Path_Resources"
+    }, {
+      "id" : "_m1RRAienEe6AJqsqjiQfNQ",
+      "name" : "GLOBAL_Correlation_Id"
+    }, {
+      "id" : "_Wkr_xG0GEe6dP5gGiwXAFg",
+      "name" : "GLOBAL_File_In_CN"
+    }, {
+      "id" : "_Wkr_xW0GEe6dP5gGiwXAFg",
+      "name" : "GLOBAL_Folder_Out_CN"
+    }, {
+      "id" : "_cSPfMHSrEe6hraz4AdMJBQ",
+      "name" : "GLOBAL_Folder_In_CN"
+    }, {
+      "id" : "_YM2HknThEe6hraz4AdMJBQ",
+      "name" : "GLOBAL_Folder_In_Y2"
+    }, {
+      "id" : "_Svvzos9gEe6epanjV3g-hA",
+      "name" : "GLOBAL_Path_DFS_New"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_ohlg0DqOEemJt4N6WX17Xg",
+    "parameterList" : [ {
+      "id" : "_keIBmiGwEeqrKImev-d6_g",
+      "name" : "FILE_Error_Response"
+    }, {
+      "id" : "_SxruJHJqEe6HMojcbffHbQ",
+      "name" : "WS_Execution_informations_file"
+    }, {
+      "id" : "_SxruJXJqEe6HMojcbffHbQ",
+      "name" : "WS_Error_informations_file"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_QH1sQDSPEemA4to60-AqJA",
+    "parameterList" : [ {
+      "id" : "_QIqLoTSPEemA4to60-AqJA",
+      "name" : "GLOBAL_Environnement"
+    }, {
+      "id" : "_QIqLojSPEemA4to60-AqJA",
+      "name" : "GLOBAL_Parameters_File"
+    }, {
+      "id" : "_bV9dEHYjEem09_sFFxi1iA",
+      "name" : "GLOBAL_Path_Temp"
+    }, {
+      "id" : "_bMF4wH1dEemYB6WD5PpOPQ",
+      "name" : "GLOBAL_Dry_Run"
+    }, {
+      "id" : "_cEdKgH1lEemYB6WD5PpOPQ",
+      "name" : "GLOBAL_Path_DFS"
+    }, {
+      "id" : "_WtLDkMsTEemD74A0lLH2tg",
+      "name" : "GLOBAL_Path_Exchange_Y2"
+    }, {
+      "id" : "_W88boPPpEemH4eb9DevLKg",
+      "name" : "GLOBAL_Datadog_Uri"
+    }, {
+      "id" : "_W88bofPpEemH4eb9DevLKg",
+      "name" : "GLOBAL_Datadog_Interval"
+    }, {
+      "id" : "_9WGP4EDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Temp"
+    }, {
+      "id" : "_9WGP4UDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_In"
+    }, {
+      "id" : "_9WGP4kDtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Out"
+    }, {
+      "id" : "_9WGP40DtEeqCDp3O6Xd0gw",
+      "name" : "GLOBAL_Folder_Archive"
+    }, {
+      "id" : "_9CC-wFSyEequ-oXxcSAHTw",
+      "name" : "GLOBAL_Job_Master_Name"
+    }, {
+      "id" : "_tlHosJ-bEeq-gdtovrfDEQ",
+      "name" : "GLOBAL_File_In"
+    }, {
+      "id" : "_tlHosZ-bEeq-gdtovrfDEQ",
+      "name" : "GLOBAL_File_Out"
+    }, {
+      "id" : "_7IIS0FQmEeuf3YuVL9PDow",
+      "name" : "GLOBAL_Path_Resources"
+    }, {
+      "id" : "_m1RRACenEe6AJqsqjiQfNQ",
+      "name" : "GLOBAL_Correlation_Id"
+    }, {
+      "id" : "_Wkr_wG0GEe6dP5gGiwXAFg",
+      "name" : "GLOBAL_File_In_CN"
+    }, {
+      "id" : "_Wkr_wW0GEe6dP5gGiwXAFg",
+      "name" : "GLOBAL_Folder_Out_CN"
+    }, {
+      "id" : "_cSO4IHSrEe6hraz4AdMJBQ",
+      "name" : "GLOBAL_Folder_In_CN"
+    }, {
+      "id" : "_YM2HkHThEe6hraz4AdMJBQ",
+      "name" : "GLOBAL_Folder_In_Y2"
+    }, {
+      "id" : "_SvvzoM9gEe6epanjV3g-hA",
+      "name" : "GLOBAL_Path_DFS_New"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_ohlg0DqOEemJt4N6WX17Xg",
+    "parameterList" : [ {
+      "id" : "_oiAXkjqOEemJt4N6WX17Xg",
+      "name" : "FILE_Error_Response"
+    }, {
+      "id" : "_SxruIHJqEe6HMojcbffHbQ",
+      "name" : "WS_Execution_informations_file"
+    }, {
+      "id" : "_SxruIXJqEe6HMojcbffHbQ",
+      "name" : "WS_Error_informations_file"
+    } ]
+  } ]
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_QIqLoDSPEemA4to60-AqJA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_QIqLoTSPEemA4to60-AqJA" comment="" name="GLOBAL_Environnement" prompt="GLOBAL_Environnement?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="LOC"/>
+    <contextParameter xmi:id="_QIqLojSPEemA4to60-AqJA" comment="" name="GLOBAL_Parameters_File" prompt="GLOBAL_Parameters_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="C:/DEV/talend.param"/>
+    <contextParameter xmi:id="_bV9dEHYjEem09_sFFxi1iA" comment="" name="GLOBAL_Path_Temp" prompt="GLOBAL_Path_Temp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_bMF4wH1dEemYB6WD5PpOPQ" comment="" name="GLOBAL_Dry_Run" prompt="GLOBAL_Dry_Run?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter xmi:id="_cEdKgH1lEemYB6WD5PpOPQ" comment="" name="GLOBAL_Path_DFS" prompt="GLOBAL_Path_DFS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_WtLDkMsTEemD74A0lLH2tg" comment="" name="GLOBAL_Path_Exchange_Y2" prompt="GLOBAL_Path_Exchange_Y2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_W88boPPpEemH4eb9DevLKg" comment="" name="GLOBAL_Datadog_Uri" prompt="GLOBAL_Datadog_Uri?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_W88bofPpEemH4eb9DevLKg" comment="" name="GLOBAL_Datadog_Interval" prompt="GLOBAL_Datadog_Interval?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter xmi:id="_9WGP4EDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Temp" prompt="GLOBAL_Folder_Temp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP4UDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_In" prompt="GLOBAL_Folder_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP4kDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Out" prompt="GLOBAL_Folder_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP40DtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Archive" prompt="GLOBAL_Folder_Archive?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9CC-wFSyEequ-oXxcSAHTw" comment="" name="GLOBAL_Job_Master_Name" prompt="GLOBAL_Job_Master_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tlHosJ-bEeq-gdtovrfDEQ" comment="" name="GLOBAL_File_In" prompt="GLOBAL_File_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tlHosZ-bEeq-gdtovrfDEQ" comment="" name="GLOBAL_File_Out" prompt="GLOBAL_File_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_7IIS0FQmEeuf3YuVL9PDow" comment="" name="GLOBAL_Path_Resources" prompt="GLOBAL_Path_Resources?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_m1RRACenEe6AJqsqjiQfNQ" comment="" name="GLOBAL_Correlation_Id" prompt="GLOBAL_Correlation_Id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Wkr_wG0GEe6dP5gGiwXAFg" comment="" name="GLOBAL_File_In_CN" prompt="GLOBAL_File_In_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Wkr_wW0GEe6dP5gGiwXAFg" comment="" name="GLOBAL_Folder_Out_CN" prompt="GLOBAL_Folder_Out_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_cSO4IHSrEe6hraz4AdMJBQ" comment="" name="GLOBAL_Folder_In_CN" prompt="GLOBAL_Folder_In_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YM2HkHThEe6hraz4AdMJBQ" comment="" name="GLOBAL_Folder_In_Y2" prompt="GLOBAL_Folder_In_Y2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_SvvzoM9gEe6epanjV3g-hA" comment="" name="GLOBAL_Path_DFS_New" prompt="GLOBAL_Path_DFS_New?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_QIqLozSPEemA4to60-AqJA" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_QIqLpDSPEemA4to60-AqJA" comment="" name="GLOBAL_Environnement" prompt="GLOBAL_Environnement?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEV"/>
+    <contextParameter xmi:id="_QIqLpTSPEemA4to60-AqJA" comment="" name="GLOBAL_Parameters_File" prompt="GLOBAL_Parameters_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="D:/Data/Talend/talend.param"/>
+    <contextParameter xmi:id="_bV9dEXYjEem09_sFFxi1iA" comment="" name="GLOBAL_Path_Temp" prompt="GLOBAL_Path_Temp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_bMF4wX1dEemYB6WD5PpOPQ" comment="" name="GLOBAL_Dry_Run" prompt="GLOBAL_Dry_Run?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+    <contextParameter xmi:id="_cEdKgX1lEemYB6WD5PpOPQ" comment="" name="GLOBAL_Path_DFS" prompt="GLOBAL_Path_DFS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_WtLDkcsTEemD74A0lLH2tg" comment="" name="GLOBAL_Path_Exchange_Y2" prompt="GLOBAL_Path_Exchange_Y2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_W88bovPpEemH4eb9DevLKg" comment="" name="GLOBAL_Datadog_Uri" prompt="GLOBAL_Datadog_Uri?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_W88bo_PpEemH4eb9DevLKg" comment="" name="GLOBAL_Datadog_Interval" prompt="GLOBAL_Datadog_Interval?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter xmi:id="_9WGP5EDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Temp" prompt="GLOBAL_Folder_Temp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP5UDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_In" prompt="GLOBAL_Folder_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP5kDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Out" prompt="GLOBAL_Folder_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP50DtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Archive" prompt="GLOBAL_Folder_Archive?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9CC-wVSyEequ-oXxcSAHTw" comment="" name="GLOBAL_Job_Master_Name" prompt="GLOBAL_Job_Master_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tlHosp-bEeq-gdtovrfDEQ" comment="" name="GLOBAL_File_In" prompt="GLOBAL_File_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tlHos5-bEeq-gdtovrfDEQ" comment="" name="GLOBAL_File_Out" prompt="GLOBAL_File_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_7II54FQmEeuf3YuVL9PDow" comment="" name="GLOBAL_Path_Resources" prompt="GLOBAL_Path_Resources?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_m1RRASenEe6AJqsqjiQfNQ" comment="" name="GLOBAL_Correlation_Id" prompt="GLOBAL_Correlation_Id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Wkr_wm0GEe6dP5gGiwXAFg" comment="" name="GLOBAL_File_In_CN" prompt="GLOBAL_File_In_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Wkr_w20GEe6dP5gGiwXAFg" comment="" name="GLOBAL_Folder_Out_CN" prompt="GLOBAL_Folder_Out_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_cSO4IXSrEe6hraz4AdMJBQ" comment="" name="GLOBAL_Folder_In_CN" prompt="GLOBAL_Folder_In_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YM2HkXThEe6hraz4AdMJBQ" comment="" name="GLOBAL_Folder_In_Y2" prompt="GLOBAL_Folder_In_Y2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Svvzoc9gEe6epanjV3g-hA" comment="" name="GLOBAL_Path_DFS_New" prompt="GLOBAL_Path_DFS_New?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_QIqLpjSPEemA4to60-AqJA" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_QIqLpzSPEemA4to60-AqJA" comment="" name="GLOBAL_Environnement" prompt="GLOBAL_Environnement?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="UAT"/>
+    <contextParameter xmi:id="_QIqLqDSPEemA4to60-AqJA" comment="" name="GLOBAL_Parameters_File" prompt="GLOBAL_Parameters_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="D:/Data/Talend/talend.param"/>
+    <contextParameter xmi:id="_bV9dEnYjEem09_sFFxi1iA" comment="" name="GLOBAL_Path_Temp" prompt="GLOBAL_Path_Temp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_bMF4wn1dEemYB6WD5PpOPQ" comment="" name="GLOBAL_Dry_Run" prompt="GLOBAL_Dry_Run?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+    <contextParameter xmi:id="_cEdKgn1lEemYB6WD5PpOPQ" comment="" name="GLOBAL_Path_DFS" prompt="GLOBAL_Path_DFS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_WtLDkssTEemD74A0lLH2tg" comment="" name="GLOBAL_Path_Exchange_Y2" prompt="GLOBAL_Path_Exchange_Y2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_W88bpPPpEemH4eb9DevLKg" comment="" name="GLOBAL_Datadog_Uri" prompt="GLOBAL_Datadog_Uri?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_W88bpfPpEemH4eb9DevLKg" comment="" name="GLOBAL_Datadog_Interval" prompt="GLOBAL_Datadog_Interval?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter xmi:id="_9WGP6EDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Temp" prompt="GLOBAL_Folder_Temp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP6UDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_In" prompt="GLOBAL_Folder_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP6kDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Out" prompt="GLOBAL_Folder_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP60DtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Archive" prompt="GLOBAL_Folder_Archive?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9CC-wlSyEequ-oXxcSAHTw" comment="" name="GLOBAL_Job_Master_Name" prompt="GLOBAL_Job_Master_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tlHotJ-bEeq-gdtovrfDEQ" comment="" name="GLOBAL_File_In" prompt="GLOBAL_File_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tlHotZ-bEeq-gdtovrfDEQ" comment="" name="GLOBAL_File_Out" prompt="GLOBAL_File_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_7II54VQmEeuf3YuVL9PDow" comment="" name="GLOBAL_Path_Resources" prompt="GLOBAL_Path_Resources?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_m1RRAienEe6AJqsqjiQfNQ" comment="" name="GLOBAL_Correlation_Id" prompt="GLOBAL_Correlation_Id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Wkr_xG0GEe6dP5gGiwXAFg" comment="" name="GLOBAL_File_In_CN" prompt="GLOBAL_File_In_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Wkr_xW0GEe6dP5gGiwXAFg" comment="" name="GLOBAL_Folder_Out_CN" prompt="GLOBAL_Folder_Out_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_cSPfMHSrEe6hraz4AdMJBQ" comment="" name="GLOBAL_Folder_In_CN" prompt="GLOBAL_Folder_In_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YM2HknThEe6hraz4AdMJBQ" comment="" name="GLOBAL_Folder_In_Y2" prompt="GLOBAL_Folder_In_Y2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Svvzos9gEe6epanjV3g-hA" comment="" name="GLOBAL_Path_DFS_New" prompt="GLOBAL_Path_DFS_New?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_QIqLqTSPEemA4to60-AqJA" confirmationNeeded="false" name="PPD">
+    <contextParameter xmi:id="_QIqLqjSPEemA4to60-AqJA" comment="" name="GLOBAL_Environnement" prompt="GLOBAL_Environnement?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="PPD"/>
+    <contextParameter xmi:id="_QIqLqzSPEemA4to60-AqJA" comment="" name="GLOBAL_Parameters_File" prompt="GLOBAL_Parameters_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="D:/Data/Talend/talend.param"/>
+    <contextParameter xmi:id="_bV9dE3YjEem09_sFFxi1iA" comment="" name="GLOBAL_Path_Temp" prompt="GLOBAL_Path_Temp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_bMGf0H1dEemYB6WD5PpOPQ" comment="" name="GLOBAL_Dry_Run" prompt="GLOBAL_Dry_Run?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+    <contextParameter xmi:id="_cEdKg31lEemYB6WD5PpOPQ" comment="" name="GLOBAL_Path_DFS" prompt="GLOBAL_Path_DFS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_WtLDk8sTEemD74A0lLH2tg" comment="" name="GLOBAL_Path_Exchange_Y2" prompt="GLOBAL_Path_Exchange_Y2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_W88bpvPpEemH4eb9DevLKg" comment="" name="GLOBAL_Datadog_Uri" prompt="GLOBAL_Datadog_Uri?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_W88bp_PpEemH4eb9DevLKg" comment="" name="GLOBAL_Datadog_Interval" prompt="GLOBAL_Datadog_Interval?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter xmi:id="_9WGP7EDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Temp" prompt="GLOBAL_Folder_Temp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP7UDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_In" prompt="GLOBAL_Folder_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP7kDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Out" prompt="GLOBAL_Folder_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP70DtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Archive" prompt="GLOBAL_Folder_Archive?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9CC-w1SyEequ-oXxcSAHTw" comment="" name="GLOBAL_Job_Master_Name" prompt="GLOBAL_Job_Master_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tlHotp-bEeq-gdtovrfDEQ" comment="" name="GLOBAL_File_In" prompt="GLOBAL_File_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tlHot5-bEeq-gdtovrfDEQ" comment="" name="GLOBAL_File_Out" prompt="GLOBAL_File_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_7II54lQmEeuf3YuVL9PDow" comment="" name="GLOBAL_Path_Resources" prompt="GLOBAL_Path_Resources?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_m1RRAyenEe6AJqsqjiQfNQ" comment="" name="GLOBAL_Correlation_Id" prompt="GLOBAL_Correlation_Id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Wkr_xm0GEe6dP5gGiwXAFg" comment="" name="GLOBAL_File_In_CN" prompt="GLOBAL_File_In_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Wkr_x20GEe6dP5gGiwXAFg" comment="" name="GLOBAL_Folder_Out_CN" prompt="GLOBAL_Folder_Out_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_cSPfMXSrEe6hraz4AdMJBQ" comment="" name="GLOBAL_Folder_In_CN" prompt="GLOBAL_Folder_In_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YM2Hk3ThEe6hraz4AdMJBQ" comment="" name="GLOBAL_Folder_In_Y2" prompt="GLOBAL_Folder_In_Y2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Svvzo89gEe6epanjV3g-hA" comment="" name="GLOBAL_Path_DFS_New" prompt="GLOBAL_Path_DFS_New?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_QIqLrDSPEemA4to60-AqJA" confirmationNeeded="false" name="PRD">
+    <contextParameter xmi:id="_QIqLrTSPEemA4to60-AqJA" comment="" name="GLOBAL_Environnement" prompt="GLOBAL_Environnement?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="PRD"/>
+    <contextParameter xmi:id="_QIqLrjSPEemA4to60-AqJA" comment="" name="GLOBAL_Parameters_File" prompt="GLOBAL_Parameters_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="D:/Data/Talend/talend.param"/>
+    <contextParameter xmi:id="_bV9dFHYjEem09_sFFxi1iA" comment="" name="GLOBAL_Path_Temp" prompt="GLOBAL_Path_Temp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_bMGf0X1dEemYB6WD5PpOPQ" comment="" name="GLOBAL_Dry_Run" prompt="GLOBAL_Dry_Run?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter xmi:id="_cEdKhH1lEemYB6WD5PpOPQ" comment="" name="GLOBAL_Path_DFS" prompt="GLOBAL_Path_DFS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_WtLDlMsTEemD74A0lLH2tg" comment="" name="GLOBAL_Path_Exchange_Y2" prompt="GLOBAL_Path_Exchange_Y2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_W88bqPPpEemH4eb9DevLKg" comment="" name="GLOBAL_Datadog_Uri" prompt="GLOBAL_Datadog_Uri?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_W88bqfPpEemH4eb9DevLKg" comment="" name="GLOBAL_Datadog_Interval" prompt="GLOBAL_Datadog_Interval?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter xmi:id="_9WGP8EDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Temp" prompt="GLOBAL_Folder_Temp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP8UDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_In" prompt="GLOBAL_Folder_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP8kDtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Out" prompt="GLOBAL_Folder_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9WGP80DtEeqCDp3O6Xd0gw" comment="" name="GLOBAL_Folder_Archive" prompt="GLOBAL_Folder_Archive?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_9CC-xFSyEequ-oXxcSAHTw" comment="" name="GLOBAL_Job_Master_Name" prompt="GLOBAL_Job_Master_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tlHouJ-bEeq-gdtovrfDEQ" comment="" name="GLOBAL_File_In" prompt="GLOBAL_File_In?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_tlHouZ-bEeq-gdtovrfDEQ" comment="" name="GLOBAL_File_Out" prompt="GLOBAL_File_Out?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_7II541QmEeuf3YuVL9PDow" comment="" name="GLOBAL_Path_Resources" prompt="GLOBAL_Path_Resources?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_m1RRBCenEe6AJqsqjiQfNQ" comment="" name="GLOBAL_Correlation_Id" prompt="GLOBAL_Correlation_Id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Wkr_yG0GEe6dP5gGiwXAFg" comment="" name="GLOBAL_File_In_CN" prompt="GLOBAL_File_In_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_Wkr_yW0GEe6dP5gGiwXAFg" comment="" name="GLOBAL_Folder_Out_CN" prompt="GLOBAL_Folder_Out_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_cSPfMnSrEe6hraz4AdMJBQ" comment="" name="GLOBAL_Folder_In_CN" prompt="GLOBAL_Folder_In_CN?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YM2HlHThEe6hraz4AdMJBQ" comment="" name="GLOBAL_Folder_In_Y2" prompt="GLOBAL_Folder_In_Y2?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_SvwasM9gEe6epanjV3g-hA" comment="" name="GLOBAL_Path_DFS_New" prompt="GLOBAL_Path_DFS_New?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

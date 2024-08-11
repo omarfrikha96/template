@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_1p-I0JkQEe68vInIhtJ_2A" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_1p-I0ZkQEe68vInIhtJ_2A" comment="" name="azure_url_token" prompt="azure_url_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://login.microsoftonline.com/de101baf-9a28-4c74-b428-ddaedc9f730b/oauth2/token"/>
+    <contextParameter xmi:id="_1p-I0pkQEe68vInIhtJ_2A" comment="" name="azure_client_id" prompt="azure_client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="23eeb14c-bcb5-4800-a708-0097a2f19987"/>
+    <contextParameter xmi:id="_1p-I05kQEe68vInIhtJ_2A" comment="" name="azure_client_secret" prompt="azure_client_secret?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mB88Q~AXXFw1-6ipaHXpvGCSXZqEEdqKwVytsbqd"/>
+    <contextParameter xmi:id="_1p-I1pkQEe68vInIhtJ_2A" comment="" name="azure_grant_type" prompt="azure_grant_type?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="client_credentials"/>
+    <contextParameter xmi:id="_1p-I15kQEe68vInIhtJ_2A" comment="" name="azure_resource" prompt="azure_resource?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://vault.azure.net"/>
+    <contextParameter xmi:id="_1p-I2JkQEe68vInIhtJ_2A" comment="" name="azure_content_type_token" prompt="azure_content_type_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="application/x-www-form-urlencoded"/>
+    <contextParameter xmi:id="_NZH_oRnPEe-iCa1jNMVBiA" comment="" name="azure_access_token" prompt="azure_access_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_NZH_ohnPEe-iCa1jNMVBiA" comment="" name="azure_token_type" prompt="azure_token_type?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YI8xsDZSEe-z9o0bufIkgg" comment="" name="azure_tenant_id" prompt="azure_tenant_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="de101baf-9a28-4c74-b428-ddaedc9f730b"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_IszuAMtNEe6Ij-gbxt6STw" confirmationNeeded="false" name="STG">
+    <contextParameter xmi:id="_IszuActNEe6Ij-gbxt6STw" comment="" name="azure_url_token" prompt="azure_url_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://login.microsoftonline.com/de101baf-9a28-4c74-b428-ddaedc9f730b/oauth2/token"/>
+    <contextParameter xmi:id="_IszuAstNEe6Ij-gbxt6STw" comment="" name="azure_client_id" prompt="azure_client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="12ba530a-4b3e-470e-a525-0929e095b3cf"/>
+    <contextParameter xmi:id="_IszuA8tNEe6Ij-gbxt6STw" comment="" name="azure_client_secret" prompt="azure_client_secret?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="20H8Q~KOpimCgsZXmcuVTZeSzDOUdOC.VhBqLb_m"/>
+    <contextParameter xmi:id="_IszuBstNEe6Ij-gbxt6STw" comment="" name="azure_grant_type" prompt="azure_grant_type?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="client_credentials"/>
+    <contextParameter xmi:id="_IszuB8tNEe6Ij-gbxt6STw" comment="" name="azure_resource" prompt="azure_resource?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://vault.azure.net"/>
+    <contextParameter xmi:id="_IszuCMtNEe6Ij-gbxt6STw" comment="" name="azure_content_type_token" prompt="azure_content_type_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="application/x-www-form-urlencoded"/>
+    <contextParameter xmi:id="_NZH_rRnPEe-iCa1jNMVBiA" comment="" name="azure_access_token" prompt="azure_access_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_NZH_rhnPEe-iCa1jNMVBiA" comment="" name="azure_token_type" prompt="azure_token_type?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YI8xsTZSEe-z9o0bufIkgg" comment="" name="azure_tenant_id" prompt="azure_tenant_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_1p-I25kQEe68vInIhtJ_2A" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_1p-I3JkQEe68vInIhtJ_2A" comment="" name="azure_url_token" prompt="azure_url_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://login.microsoftonline.com/de101baf-9a28-4c74-b428-ddaedc9f730b/oauth2/token"/>
+    <contextParameter xmi:id="_1p-I3ZkQEe68vInIhtJ_2A" comment="" name="azure_client_id" prompt="azure_client_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5cd0956c-9f15-447f-937b-e3a2ed997ba4"/>
+    <contextParameter xmi:id="_1p-I3pkQEe68vInIhtJ_2A" comment="" name="azure_client_secret" prompt="azure_client_secret?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="rZF8Q~7kn1X4.1vVttJ6G.orcYwzkx2lrb-2lbXg"/>
+    <contextParameter xmi:id="_1p-I4ZkQEe68vInIhtJ_2A" comment="" name="azure_grant_type" prompt="azure_grant_type?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="client_credentials"/>
+    <contextParameter xmi:id="_1p-I4pkQEe68vInIhtJ_2A" comment="" name="azure_resource" prompt="azure_resource?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://vault.azure.net"/>
+    <contextParameter xmi:id="_1p-I45kQEe68vInIhtJ_2A" comment="" name="azure_content_type_token" prompt="azure_content_type_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="application/x-www-form-urlencoded"/>
+    <contextParameter xmi:id="_NZH_pxnPEe-iCa1jNMVBiA" comment="" name="azure_access_token" prompt="azure_access_token?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_NZH_qBnPEe-iCa1jNMVBiA" comment="" name="azure_token_type" prompt="azure_token_type?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_YI8xsjZSEe-z9o0bufIkgg" comment="" name="azure_tenant_id" prompt="azure_tenant_id?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

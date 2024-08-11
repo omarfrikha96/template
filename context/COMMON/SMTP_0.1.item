@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_HLGogDSUEemA4to60-AqJA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_HLGogTSUEemA4to60-AqJA" comment="" name="EMAIL_FROM" prompt="EMAIL_FROM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_HLGogjSUEemA4to60-AqJA" comment="" name="EMAIL_FROM_NAME" prompt="EMAIL_FROM_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_HLGogzSUEemA4to60-AqJA" comment="" name="EMAIL_TO" prompt="EMAIL_TO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_XVdXQDSUEemA4to60-AqJA" comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_XVdXQTSUEemA4to60-AqJA" comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_yteWUFHwEeytboS1XmDxeg" comment="" name="EMAIL_CHINA_STORES" prompt="EMAIL_CHINA_STORES?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_yteWUVHwEeytboS1XmDxeg" comment="" name="EMAIL_SEAMLESS" prompt="EMAIL_SEAMLESS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_h3n48JMqEeyZ0IwfXpRvuw" comment="" name="EMAIL_QA" prompt="EMAIL_QA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_liauUE7oEe2R9f0FGVNdEg" comment="" name="EMAIL_SFMC" prompt="EMAIL_SFMC?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_FFoxIJdKEemjZZDoukeCNg" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_FFoxIZdKEemjZZDoukeCNg" comment="" name="EMAIL_FROM" prompt="EMAIL_FROM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxIpdKEemjZZDoukeCNg" comment="" name="EMAIL_FROM_NAME" prompt="EMAIL_FROM_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxI5dKEemjZZDoukeCNg" comment="" name="EMAIL_TO" prompt="EMAIL_TO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxJJdKEemjZZDoukeCNg" comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxJZdKEemjZZDoukeCNg" comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_yteWUlHwEeytboS1XmDxeg" comment="" name="EMAIL_CHINA_STORES" prompt="EMAIL_CHINA_STORES?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_yteWU1HwEeytboS1XmDxeg" comment="" name="EMAIL_SEAMLESS" prompt="EMAIL_SEAMLESS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_h3n48ZMqEeyZ0IwfXpRvuw" comment="" name="EMAIL_QA" prompt="EMAIL_QA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_liauUU7oEe2R9f0FGVNdEg" comment="" name="EMAIL_SFMC" prompt="EMAIL_SFMC?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_FFoxMpdKEemjZZDoukeCNg" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_FFoxM5dKEemjZZDoukeCNg" comment="" name="EMAIL_FROM" prompt="EMAIL_FROM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxNJdKEemjZZDoukeCNg" comment="" name="EMAIL_FROM_NAME" prompt="EMAIL_FROM_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxNZdKEemjZZDoukeCNg" comment="" name="EMAIL_TO" prompt="EMAIL_TO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxNpdKEemjZZDoukeCNg" comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxN5dKEemjZZDoukeCNg" comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_yteWVFHwEeytboS1XmDxeg" comment="" name="EMAIL_CHINA_STORES" prompt="EMAIL_CHINA_STORES?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_yteWVVHwEeytboS1XmDxeg" comment="" name="EMAIL_SEAMLESS" prompt="EMAIL_SEAMLESS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_h3n48pMqEeyZ0IwfXpRvuw" comment="" name="EMAIL_QA" prompt="EMAIL_QA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_libVYE7oEe2R9f0FGVNdEg" comment="" name="EMAIL_SFMC" prompt="EMAIL_SFMC?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_FFoxJpdKEemjZZDoukeCNg" confirmationNeeded="false" name="PPD">
+    <contextParameter xmi:id="_FFoxJ5dKEemjZZDoukeCNg" comment="" name="EMAIL_FROM" prompt="EMAIL_FROM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxKJdKEemjZZDoukeCNg" comment="" name="EMAIL_FROM_NAME" prompt="EMAIL_FROM_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxKZdKEemjZZDoukeCNg" comment="" name="EMAIL_TO" prompt="EMAIL_TO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxKpdKEemjZZDoukeCNg" comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxK5dKEemjZZDoukeCNg" comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_yteWVlHwEeytboS1XmDxeg" comment="" name="EMAIL_CHINA_STORES" prompt="EMAIL_CHINA_STORES?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_yteWV1HwEeytboS1XmDxeg" comment="" name="EMAIL_SEAMLESS" prompt="EMAIL_SEAMLESS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_h3n485MqEeyZ0IwfXpRvuw" comment="" name="EMAIL_QA" prompt="EMAIL_QA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_libVYU7oEe2R9f0FGVNdEg" comment="" name="EMAIL_SFMC" prompt="EMAIL_SFMC?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_FFoxLJdKEemjZZDoukeCNg" confirmationNeeded="false" name="PRD">
+    <contextParameter xmi:id="_FFoxLZdKEemjZZDoukeCNg" comment="" name="EMAIL_FROM" prompt="EMAIL_FROM?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxLpdKEemjZZDoukeCNg" comment="" name="EMAIL_FROM_NAME" prompt="EMAIL_FROM_NAME?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxL5dKEemjZZDoukeCNg" comment="" name="EMAIL_TO" prompt="EMAIL_TO?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxMJdKEemjZZDoukeCNg" comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_FFoxMZdKEemjZZDoukeCNg" comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_yteWWFHwEeytboS1XmDxeg" comment="" name="EMAIL_CHINA_STORES" prompt="EMAIL_CHINA_STORES?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_yteWWVHwEeytboS1XmDxeg" comment="" name="EMAIL_SEAMLESS" prompt="EMAIL_SEAMLESS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_h3n49JMqEeyZ0IwfXpRvuw" comment="" name="EMAIL_QA" prompt="EMAIL_QA?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_libVYk7oEe2R9f0FGVNdEg" comment="" name="EMAIL_SFMC" prompt="EMAIL_SFMC?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

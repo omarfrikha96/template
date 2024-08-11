@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_oiAXkDqOEemJt4N6WX17Xg" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_oiAXkjqOEemJt4N6WX17Xg" comment="" name="FILE_Error_Response" prompt="FILE_Error_Response?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/DEV/Error_Response_Handler.csv"/>
+    <contextParameter xmi:id="_SxruIHJqEe6HMojcbffHbQ" comment="" name="WS_Execution_informations_file" prompt="WS_Execution_informations_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_SxruIXJqEe6HMojcbffHbQ" comment="" name="WS_Error_informations_file" prompt="WS_Error_informations_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="\SFTP\TALEND\IN\TECHNICAL\WS_Error_informations"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_keIBkCGwEeqrKImev-d6_g" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_keIBkSGwEeqrKImev-d6_g" comment="" name="FILE_Error_Response" prompt="FILE_Error_Response?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_SxruInJqEe6HMojcbffHbQ" comment="" name="WS_Execution_informations_file" prompt="WS_Execution_informations_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_SxruI3JqEe6HMojcbffHbQ" comment="" name="WS_Error_informations_file" prompt="WS_Error_informations_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_keIBmSGwEeqrKImev-d6_g" confirmationNeeded="false" name="UAT">
+    <contextParameter xmi:id="_keIBmiGwEeqrKImev-d6_g" comment="" name="FILE_Error_Response" prompt="FILE_Error_Response?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_SxruJHJqEe6HMojcbffHbQ" comment="" name="WS_Execution_informations_file" prompt="WS_Execution_informations_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_SxruJXJqEe6HMojcbffHbQ" comment="" name="WS_Error_informations_file" prompt="WS_Error_informations_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_keIBoiGwEeqrKImev-d6_g" confirmationNeeded="false" name="PPD">
+    <contextParameter xmi:id="_keIBoyGwEeqrKImev-d6_g" comment="" name="FILE_Error_Response" prompt="FILE_Error_Response?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_SxruJnJqEe6HMojcbffHbQ" comment="" name="WS_Execution_informations_file" prompt="WS_Execution_informations_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_SxruJ3JqEe6HMojcbffHbQ" comment="" name="WS_Error_informations_file" prompt="WS_Error_informations_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_keIBqyGwEeqrKImev-d6_g" confirmationNeeded="false" name="PRD">
+    <contextParameter xmi:id="_keIBrCGwEeqrKImev-d6_g" comment="" name="FILE_Error_Response" prompt="FILE_Error_Response?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_SxruKHJqEe6HMojcbffHbQ" comment="" name="WS_Execution_informations_file" prompt="WS_Execution_informations_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_SxruKXJqEe6HMojcbffHbQ" comment="" name="WS_Error_informations_file" prompt="WS_Error_informations_file?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

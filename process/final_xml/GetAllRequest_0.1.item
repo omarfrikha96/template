@@ -76,7 +76,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:08U6YyF/krj+nu49cbBKz1sok7Fo86fp4t1qB1ZE" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:7BoeHzJayi+uVX6bokLen12Fdp2RE9JpmppSwajY" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -111,7 +111,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JtiviFW3VGL2n2K1pwaQKJ3nr5LkFSIlxXZrumIr" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7893IS6Y9oaJLlALSNjDk8sdBjr/4C5P2gKOt2HB" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -140,6 +140,7 @@
     <routinesParameter id="_V6pU0EKMEe-VbNUfvRMJyA" name="TalendStringUtil"/>
     <routinesParameter id="_V6Mo4EKMEe-VbNUfvRMJyA" name="Mathematical"/>
     <routinesParameter id="_VU_6QDDqEe-sEOffpoNCvw" name="TokenValidatorService"/>
+    <routinesParameter id="_udwqADQBEe-1Q_YwwT9bJg" name="JacquemusUtils"/>
   </parameters>
   <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288" sizeX="41" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
@@ -150,7 +151,7 @@
       <elementValue elementRef="HTTP_VERB" value="GET"/>
       <elementValue elementRef="URI_PATTERN" value="&quot;/products&quot;"/>
       <elementValue elementRef="CONSUMES" value="NONE"/>
-      <elementValue elementRef="PRODUCES" value="XML-JSON"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
       <elementValue elementRef="STREAMING" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
@@ -178,6 +179,7 @@
     </metadata>
     <metadata connector="FLOW" label="header" name="header">
       <column comment="header" key="false" length="-1" name="Authorization" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="correlationId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="288">
@@ -187,12 +189,15 @@
       <elementValue elementRef="VALUE" value="((TokenValidatorService)globalMap.get(&quot;tokenValidatorService&quot;)).validateToken(header.Authorization)"/>
       <elementValue elementRef="KEY" value="&quot;i_stepSequence&quot;"/>
       <elementValue elementRef="VALUE" value="0"/>
+      <elementValue elementRef="KEY" value="&quot;s_correlationId&quot;"/>
+      <elementValue elementRef="VALUE" value="JacquemusUtils.isBlank(header.correlationId) ? StringHandling.SUBSTR((java.util.UUID.randomUUID()).toString(), 10, 14) : header.correlationId"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>is_valid_token"/>
     <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="header" name="tSetGlobalVar_1">
       <column comment="header" key="false" length="-1" name="Authorization" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="correlationId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="384">
@@ -201,7 +206,7 @@
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
-      <elementValue elementRef="VALUE" value="&quot;Unauthorized User&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;{\&quot;authorized\&quot;: false}&quot;"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
     <elementParameter field="TABLE" name="INTABLE" show="false"/>
@@ -242,7 +247,7 @@
     <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_2" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;tokenValidatorService&quot;"/>
@@ -259,7 +264,7 @@
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
-      <elementValue elementRef="VALUE" value="&quot;Internal server error&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;{\&quot;Internal_server_error\&quot;: true}&quot;"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
     <elementParameter field="TABLE" name="INTABLE" show="false"/>
@@ -300,7 +305,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;restapi&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;API_TALEND&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ro99l41MWuGipherQooI1+jydGNwc3lb6sxskjRI8158DQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Siwc6dfVMO3wGVVwnpwARtwCpJfU3uaJoQevGlShez76jg=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -327,7 +332,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;restapi&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;API_TALEND&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5F5+lekr7lrhykbVYwEiuD+4COypZ2YX0E1tIF6EOf+gTw==" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mVGpGpo/m2oMWaiS+51l3BeHFfEE31L3l1Er7ui6UO2wmg==" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_GG_iwEnHEe-N7bzp-p4KhQ - Produit" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Produit&quot;"/>
@@ -437,7 +442,7 @@
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
-      <elementValue elementRef="VALUE" value="&quot;Products not found&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;{\&quot;databaseIsEmpty\&quot;: true}&quot;"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
     <elementParameter field="TABLE" name="INTABLE" show="false"/>
@@ -473,6 +478,11 @@
     </metadata>
   </node>
   <connection connectorName="FLOW" label="header" lineStyle="0" metaname="header" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tSetGlobalVar_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="correlationId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="header" show="false"/>
   </connection>
