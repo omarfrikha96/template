@@ -1,0 +1,8 @@
+CODE;HTTP;MESSAGE;INFORMATIONS
+ERR-0000;400;400 - Bad Request;Check request parameters
+ERR-0001;401;401 - Unauthorized;Authentication failed
+ERR-0003;403;403 - Forbidden;Forbidden action
+ERR-0004;404;404 - Not Found;Product not found
+ERR-0022;422;422 - Unprocessable Entity;Incomprehensible or incomplete request
+ERR-0050;500;500 - Internal Server Error;Technical error
+ERR-0051;500;500 - Timeout;Timeout when calling tierce system

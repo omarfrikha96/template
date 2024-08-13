@@ -76,7 +76,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:TfrBTmxRhKXjPlC1oyNb5q9ZDlJHGHP8AA8Jzg7M" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:8Dgdb7uHPrBhop8MzdUZmOqWAnjBrr6dBkGa9d43" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -111,7 +111,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:eFmDyF2+rk4uRSurcoIoJklK/iLPYiQj3DWv7zcs" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:28KODANSGsWtjFlMMN5LZr67i2Naub2jXlox49fU" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -149,9 +149,9 @@
     <elementParameter field="TABLE" name="SCHEMAS">
       <elementValue elementRef="SCHEMA" value="header"/>
       <elementValue elementRef="HTTP_VERB" value="GET"/>
-      <elementValue elementRef="URI_PATTERN" value="&quot;/product/{code}&quot;"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/product/{CD_PRODUIT}&quot;"/>
       <elementValue elementRef="CONSUMES" value="NONE"/>
-      <elementValue elementRef="PRODUCES" value="XML"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
       <elementValue elementRef="STREAMING" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
@@ -179,7 +179,7 @@
     </metadata>
     <metadata connector="FLOW" label="header" name="header">
       <column comment="header" key="false" length="-1" name="Authorization" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CD_PRODUIT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="correlationId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -190,8 +190,8 @@
       <elementValue elementRef="VALUE" value="((TokenValidatorService)globalMap.get(&quot;tokenValidatorService&quot;)).validateToken(header.Authorization)"/>
       <elementValue elementRef="KEY" value="&quot;i_stepSequence&quot;"/>
       <elementValue elementRef="VALUE" value="0"/>
-      <elementValue elementRef="KEY" value="&quot;code&quot;"/>
-      <elementValue elementRef="VALUE" value="header.code"/>
+      <elementValue elementRef="KEY" value="&quot;CD_PRODUIT&quot;"/>
+      <elementValue elementRef="VALUE" value="header.CD_PRODUIT"/>
       <elementValue elementRef="KEY" value="&quot;s_correlationId&quot;"/>
       <elementValue elementRef="VALUE" value="JacquemusUtils.isBlank(header.correlationId) ? StringHandling.SUBSTR((java.util.UUID.randomUUID()).toString(), 10, 14) : header.correlationId"/>
     </elementParameter>
@@ -200,7 +200,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="header" name="tSetGlobalVar_1">
       <column comment="header" key="false" length="-1" name="Authorization" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CD_PRODUIT" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="correlationId" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -309,7 +309,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;restapi&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;API_TALEND&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:98t4nJ5bPU0ylkoCrYcOadkIMjFI3dNU3Gom2QDVijZnXw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HG0LyDwacF1ZN7hnHOgGr3bHhlI4BuInh3E0oVIGSAafaw=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -336,7 +336,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;restapi&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;API_TALEND&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:84ga84DoLRUtjyFfWymtVRHpH5lCui9KF7D9K7nP/7kJJg==" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DZg9Q5+sxc7xEFb68ldCwczGDGgUzvskU4Jd1V5+fyG4FA==" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_GG_iwEnHEe-N7bzp-p4KhQ - Produit" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Produit&quot;"/>
@@ -390,7 +390,7 @@
       <elementValue elementRef="INPUT_COLUMN" value="CD_PRODUIT"/>
       <elementValue elementRef="FUNCTION" value=""/>
       <elementValue elementRef="OPERATOR" value="=="/>
-      <elementValue elementRef="RVALUE" value="((String)globalMap.get(&quot;code&quot;))"/>
+      <elementValue elementRef="RVALUE" value="((String)globalMap.get(&quot;CD_PRODUIT&quot;))"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
     <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
@@ -541,7 +541,7 @@
   </node>
   <connection connectorName="FLOW" label="header" lineStyle="0" metaname="header" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tSetGlobalVar_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="code"/>
+      <elementValue elementRef="TRACE_COLUMN" value="CD_PRODUIT"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="correlationId"/>
