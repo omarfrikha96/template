@@ -1,0 +1,16 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_3=>" expression="&quot;{&quot;&#xA;+ &quot;\n\t\t\t\t\&quot;productExist\&quot;:\&quot;&quot; + &quot;false&quot; &#xA; + &quot;\&quot;&quot;&#xA;+ &quot;}&quot;">
+  <variables name="row8.moment" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row8.pid" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.root_pid" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.father_pid" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.project" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.job" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.context" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.priority" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row8.type" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.origin" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.message" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row8.code" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="&quot;{&quot;&#xD;&#xA;+ &quot;\n\t\t\t\t\&quot;origin\&quot;:\&quot;&quot; + row8.origin + &quot;\&quot;,&quot;&#xD;&#xA;+ &quot;\n\t\t\t\t\&quot;message\&quot;:\&quot;&quot; + row8.message.replaceAll(&quot;\n&quot;, &quot;&quot;) + &quot;\&quot;&quot;&#xD;&#xA;+ &quot;}&quot; " value="null" talendType="id_String"/>
+</expression:EMFExpression>
