@@ -1,0 +1,10 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="&quot;{\&quot;id\&quot;:\&quot;&quot; + row1.id&#xD;&#xA;+ &quot;\&quot;, \&quot;name\&quot;:\&quot;&quot; + row1.name&#xD;&#xA;+ &quot;\&quot;, \&quot;category\&quot;:\&quot;&quot; + &quot;{&quot;&#xD;&#xA;+ &quot;\&quot;, \&quot;id\&quot;:\&quot;&quot; + row1.id_c&#xD;&#xA;+ &quot;\&quot;, \&quot;name\&quot;:\&quot;&quot; + row1.name_c&#xD;&#xA;+ &quot;},&quot;&#xD;&#xA;+ &quot;\&quot;, \&quot;photoUrls\&quot;:\&quot;&quot; + row1.photoUrls&#xD;&#xA;+ &quot;\&quot;, \&quot;status\&quot;:\&quot;&quot; + row1.status&#xD;&#xA;+ &quot;\&quot;}&quot;">
+  <variables name="row1.id" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row1.name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.id_c" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row1.name_c" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.photoUrls" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.status" value="null" talendType="id_String" nullable="true"/>
+  <variables name="&quot;{\&quot;id\&quot;:\&quot;&quot; + row6.id&#xD;&#xA;+ &quot;\&quot;, \&quot;name\&quot;:\&quot;&quot; + row6.name&#xD;&#xA;+ &quot;\&quot;, \&quot;category\&quot;:\&quot;&quot; + &quot;{&quot;&#xD;&#xA;+ &quot;\&quot;, \&quot;id\&quot;:\&quot;&quot; + row6.id_c&#xD;&#xA;+ &quot;\&quot;, \&quot;name\&quot;:\&quot;&quot; + row6.name_c&#xD;&#xA;+ &quot;},&quot;&#xD;&#xA;+ &quot;\&quot;, \&quot;photoUrls\&quot;:\&quot;&quot; + row6.photoUrls&#xD;&#xA;+ &quot;\&quot;, \&quot;status\&quot;:\&quot;&quot; + row6.status&#xD;&#xA;+ &quot;\&quot;}&quot; " value="null" talendType="id_String"/>
+</expression:EMFExpression>

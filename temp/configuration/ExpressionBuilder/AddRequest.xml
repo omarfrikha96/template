@@ -1,8 +1,0 @@
-<?xml version="1.1" encoding="UTF-8"?>
-<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_3=>" expression="&quot;{&quot;&#xD;&#xA;+ &quot;\n\t\t\t\t\&quot;errorCode\&quot;:\&quot;&quot; + error_map_out.error_errorCode + &quot;\&quot;,&quot;&#xD;&#xA;+ &quot;\n\t\t\t\t\&quot;errorMessage\&quot;:\&quot;&quot; + error_map_out.error_message.replaceAll(&quot;\n&quot;, &quot;&quot;) + &quot;\&quot;,&quot;&#xD;&#xA;+ &quot;\n\t\t\t\t\&quot;errorInformation\&quot;:\&quot;&quot; + error_map_out.error_informations+ &quot;\&quot;&quot;&#xD;&#xA;+ &quot;}&quot;">
-  <variables name="error_map_out.httpCode" value="null" talendType="id_Integer" nullable="true"/>
-  <variables name="error_map_out.error_errorCode" value="null" talendType="id_String" nullable="true"/>
-  <variables name="error_map_out.error_message" value="null" talendType="id_String" nullable="true"/>
-  <variables name="error_map_out.error_informations" value="null" talendType="id_String" nullable="true"/>
-  <variables name="&quot;{&quot;&#xD;&#xA;+ &quot;\n\t\t\t\t\&quot;errorCode\&quot;:\&quot;&quot; + error_map_out.error_errorCode + &quot;\&quot;,&quot;&#xD;&#xA;+ &quot;\n\t\t\t\t\&quot;errorMessage\&quot;:\&quot;&quot; + error_map_out.error_message.replaceAll(&quot;\n&quot;, &quot;&quot;) + &quot;\&quot;,&quot;&#xD;&#xA;+ &quot;\n\t\t\t\t\&quot; errorInformation\&quot;:\&quot;&quot; + error_map_out.error_informations+ &quot;\&quot;&quot;&#xD;&#xA;+ &quot;}&quot; " value="null" talendType="id_String"/>
-</expression:EMFExpression>

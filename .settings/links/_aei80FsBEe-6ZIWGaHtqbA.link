@@ -1,0 +1,97 @@
+{
+  "itemId" : "_aei80FsBEe-6ZIWGaHtqbA",
+  "contextList" : [ {
+    "contextName" : "PROD",
+    "repoId" : "_j3acgBnNEe-iCa1jNMVBiA",
+    "parameterList" : [ {
+      "id" : "_NZH_pxnPEe-iCa1jNMVBiA",
+      "name" : "azure_access_token"
+    }, {
+      "id" : "_1p-I3ZkQEe68vInIhtJ_2A",
+      "name" : "azure_client_id"
+    }, {
+      "id" : "_1p-I3pkQEe68vInIhtJ_2A",
+      "name" : "azure_client_secret"
+    }, {
+      "id" : "_1p-I45kQEe68vInIhtJ_2A",
+      "name" : "azure_content_type_token"
+    }, {
+      "id" : "_1p-I4ZkQEe68vInIhtJ_2A",
+      "name" : "azure_grant_type"
+    }, {
+      "id" : "_1p-I4pkQEe68vInIhtJ_2A",
+      "name" : "azure_resource"
+    }, {
+      "id" : "_YI8xsjZSEe-z9o0bufIkgg",
+      "name" : "azure_tenant_id"
+    }, {
+      "id" : "_NZH_qBnPEe-iCa1jNMVBiA",
+      "name" : "azure_token_type"
+    }, {
+      "id" : "_1p-I3JkQEe68vInIhtJ_2A",
+      "name" : "azure_url_token"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_j3acgBnNEe-iCa1jNMVBiA",
+    "parameterList" : [ {
+      "id" : "_NZH_oRnPEe-iCa1jNMVBiA",
+      "name" : "azure_access_token"
+    }, {
+      "id" : "_1p-I0pkQEe68vInIhtJ_2A",
+      "name" : "azure_client_id"
+    }, {
+      "id" : "_1p-I05kQEe68vInIhtJ_2A",
+      "name" : "azure_client_secret"
+    }, {
+      "id" : "_1p-I2JkQEe68vInIhtJ_2A",
+      "name" : "azure_content_type_token"
+    }, {
+      "id" : "_1p-I1pkQEe68vInIhtJ_2A",
+      "name" : "azure_grant_type"
+    }, {
+      "id" : "_1p-I15kQEe68vInIhtJ_2A",
+      "name" : "azure_resource"
+    }, {
+      "id" : "_YI8xsDZSEe-z9o0bufIkgg",
+      "name" : "azure_tenant_id"
+    }, {
+      "id" : "_NZH_ohnPEe-iCa1jNMVBiA",
+      "name" : "azure_token_type"
+    }, {
+      "id" : "_1p-I0ZkQEe68vInIhtJ_2A",
+      "name" : "azure_url_token"
+    } ]
+  }, {
+    "contextName" : "STG",
+    "repoId" : "_j3acgBnNEe-iCa1jNMVBiA",
+    "parameterList" : [ {
+      "id" : "_NZH_rRnPEe-iCa1jNMVBiA",
+      "name" : "azure_access_token"
+    }, {
+      "id" : "_IszuAstNEe6Ij-gbxt6STw",
+      "name" : "azure_client_id"
+    }, {
+      "id" : "_IszuA8tNEe6Ij-gbxt6STw",
+      "name" : "azure_client_secret"
+    }, {
+      "id" : "_IszuCMtNEe6Ij-gbxt6STw",
+      "name" : "azure_content_type_token"
+    }, {
+      "id" : "_IszuBstNEe6Ij-gbxt6STw",
+      "name" : "azure_grant_type"
+    }, {
+      "id" : "_IszuB8tNEe6Ij-gbxt6STw",
+      "name" : "azure_resource"
+    }, {
+      "id" : "_YI8xsTZSEe-z9o0bufIkgg",
+      "name" : "azure_tenant_id"
+    }, {
+      "id" : "_NZH_rhnPEe-iCa1jNMVBiA",
+      "name" : "azure_token_type"
+    }, {
+      "id" : "_IszuActNEe6Ij-gbxt6STw",
+      "name" : "azure_url_token"
+    } ]
+  } ]
+}

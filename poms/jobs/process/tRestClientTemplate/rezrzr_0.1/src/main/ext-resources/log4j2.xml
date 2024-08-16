@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+<!--Logging Properties -->
+<Properties>
+<Property name="LogPattern"         value="%d{yyyy-MM-dd'T'HH:mm:ss,SSS} | %-5p | %replace{${sys:TalendJob.log}}{.log}{}.%c{1} | %m%n"/>
+<Property name="LogDefaultFolder" value="C:\logs"/>
+<Property name="ActiveFileName" value="C:\logs\test.log" />
+<Property name="FileNamePattern" value="C:\logs\test-%d{yyyy-MM-dd}.log"/>
+</Properties>
+<Appenders>
+<Console name="Console" target="SYSTEM_OUT">
+<PatternLayout pattern="[%-5level] %d{HH:mm:ss} %logger{36}- %msg{nolookups}%n"/>
+</Console>
+<RollingFile fileName="${ActiveFileName}" filePattern="${FileNamePattern}" name="RollingFileAppender" ignoreExceptions="false">
+<PatternLayout charset="UTF-8">
+<pattern>${LogPattern}</pattern>
+</PatternLayout>
+<Policies>
+<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+<SizeBasedTriggeringPolicy size="10 MB"/>
+</Policies>
+<DefaultRolloverStrategy max="20" />
+</RollingFile>
+</Appenders>
+<Loggers>
+<Root level="INFO">
+<AppenderRef ref="Console"/>
+<AppenderRef ref="RollingFileAppender"/>
+</Root>
+</Loggers>
+</Configuration>

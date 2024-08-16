@@ -1,5 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
-  <deletedItems id="_8UpygFC3Ee-z4aWxVJVZ5Q" path="old" type="PROCESS"/>
-  <deletedItems id="_udwqADQBEe-1Q_YwwT9bJg" path="" type="ROUTINES"/>
+  <deletedFolders>process/TEST</deletedFolders>
+  <deletedFolders>process/TEST/UCR_CN</deletedFolders>
+  <deletedFolders>process/final</deletedFolders>
+  <deletedFolders>process/final_xml</deletedFolders>
+  <deletedFolders>process/forTest</deletedFolders>
+  <deletedFolders>process/old</deletedFolders>
+  <deletedFolders>process/old/ESB</deletedFolders>
+  <deletedFolders>process/old/ESB/formation</deletedFolders>
+  <deletedFolders>process/old/ESB/formation/POST</deletedFolders>
+  <deletedFolders>process/old/Fitbit</deletedFolders>
+  <deletedFolders>process/old/youtube</deletedFolders>
+  <deletedFolders>process/old/youtube/SERVICE_REST_DELETE</deletedFolders>
+  <deletedFolders>process/old/youtube/SERVICE_REST_GET</deletedFolders>
+  <deletedFolders>process/old/youtube/SERVICE_REST_POST</deletedFolders>
+  <deletedFolders>process/old/youtube/SERVICE_REST_PUT</deletedFolders>
+  <deletedItems id="_Yqb8YFTWEe-hwuuy_3bkpg" path="TEST/UCR_CN" type="PROCESS"/>
+  <deletedItems id="_rf5b8FTVEe-hwuuy_3bkpg" path="TEST/UCR_CN" type="PROCESS"/>
+  <deletedItems id="_s63csE5UEe-qfaLGUFyuog" path="TEST/UCR_CN" type="PROCESS"/>
+  <deletedItems id="_Ch_ikFmMEe-Qaf9UhHex1g" path="final" type="PROCESS"/>
+  <deletedItems id="_DOOJwFi4Ee-z0OXUwY9cCQ" path="final" type="PROCESS"/>
+  <deletedItems id="_EEXUQFmMEe-Qaf9UhHex1g" path="final" type="PROCESS"/>
+  <deletedItems id="_Lt9xsFjCEe-z0OXUwY9cCQ" path="final" type="PROCESS"/>
+  <deletedItems id="_kUBosFfWEe-327cdWzBgJw" path="final" type="PROCESS"/>
+  <deletedItems id="_8BEMsDYfEe-z9o0bufIkgg" path="final_xml" type="PROCESS"/>
+  <deletedItems id="_9aeaAFDWEe-z4aWxVJVZ5Q" path="final_xml" type="PROCESS"/>
+  <deletedItems id="_GjH00FC8Ee-z4aWxVJVZ5Q" path="final_xml" type="PROCESS"/>
+  <deletedItems id="_MoRqoFC7Ee-z4aWxVJVZ5Q" path="final_xml" type="PROCESS"/>
+  <deletedItems id="_b_ZJUFDhEe-L1YgjqqIHBw" path="final_xml" type="PROCESS"/>
+  <deletedItems id="_sP3noFC0Ee-JqftXUxoHug" path="final_xml" type="PROCESS"/>
+  <deletedItems id="_viKDUDDtEe-sEOffpoNCvw" path="final_xml" type="PROCESS"/>
+  <deletedItems id="_2sckwFo3Ee-cVK64IXIxkw" path="forTest" type="PROCESS"/>
+  <deletedItems id="_HYclwFrtEe-6ZIWGaHtqbA" path="forTest" type="PROCESS"/>
+  <deletedItems id="_bSUcwFr5Ee-6ZIWGaHtqbA" path="forTest" type="PROCESS"/>
+  <deletedItems id="_fnXMYFrjEe-6ZIWGaHtqbA" path="forTest" type="PROCESS"/>
+  <deletedItems id="_2oJQIDFREe-l64dy_mQD0A" path="old" type="PROCESS"/>
+  <deletedItems id="_rOXBMEsrEe-itNpQlfleCQ" path="old" type="PROCESS"/>
+  <deletedItems id="_4NrY0EKPEe-VbNUfvRMJyA" path="old/ESB" type="PROCESS"/>
+  <deletedItems id="_hnFRUEKNEe-VbNUfvRMJyA" path="old/ESB" type="PROCESS"/>
+  <deletedItems id="_DybSgENNEe-DwZaW_gjrCA" path="old/ESB/formation" type="PROCESS"/>
+  <deletedItems id="_h4yKoEhGEe-6l-7mEfdbow" path="old/ESB/formation" type="PROCESS"/>
+  <deletedItems id="_tDXnAENUEe-DwZaW_gjrCA" path="old/ESB/formation" type="PROCESS"/>
+  <deletedItems id="_7ToxMENgEe-t9LnawCIItQ" path="old/ESB/formation/POST" type="PROCESS"/>
+  <deletedItems id="_f785QENeEe-t9LnawCIItQ" path="old/ESB/formation/POST" type="PROCESS"/>
+  <deletedItems id="_xyKHwNzQEeyFpaCeFJ0kjA" path="old/Fitbit" type="PROCESS"/>
+  <deletedItems id="_OHTi4AfJEe-9BvCObTv0PA" path="old/youtube/SERVICE_REST_DELETE" type="PROCESS"/>
+  <deletedItems id="_tetqoAfJEe-9BvCObTv0PA" path="old/youtube/SERVICE_REST_DELETE" type="PROCESS"/>
+  <deletedItems id="_hBZ5kAfCEe-9BvCObTv0PA" path="old/youtube/SERVICE_REST_GET" type="PROCESS"/>
+  <deletedItems id="_6cXRAAfCEe-9BvCObTv0PA" path="old/youtube/SERVICE_REST_POST" type="PROCESS"/>
+  <deletedItems id="_nUrRoAfGEe-9BvCObTv0PA" path="old/youtube/SERVICE_REST_POST" type="PROCESS"/>
+  <deletedItems id="_QwqnQAfIEe-9BvCObTv0PA" path="old/youtube/SERVICE_REST_PUT" type="PROCESS"/>
+  <deletedItems id="_gc2zUAfIEe-9BvCObTv0PA" path="old/youtube/SERVICE_REST_PUT" type="PROCESS"/>
+  <deletedItems id="_fTGB8FumEe-_xZKA8pOSRw" path="tRestClientTemplate" type="PROCESS"/>
 </recyclebin:RecycleBin>

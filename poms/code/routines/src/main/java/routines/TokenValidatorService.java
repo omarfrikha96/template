@@ -1,6 +1,8 @@
 package routines;
 
 import java.util.Base64;
+
+
 import com.nimbusds.jose.JWSAlgorithm;
 import com.nimbusds.jose.JWSObject;
 import com.nimbusds.jose.crypto.RSASSAVerifier;
@@ -72,8 +74,10 @@ public class TokenValidatorService {
             boolean isVerified = isClientValid && (jwsObject.verify(verifier));
             return isVerified;
         } catch (Exception e) {
+        	System.out.println("Token validation error: " + e.getMessage());
             e.printStackTrace();
             return false;
+
         }
     }
     
